@@ -138,5 +138,9 @@ class LocalStudentManagerTest {
         assertTrue(manager.listOf10().isEmpty())
     }
 
+    fun main() {
+        println(listOf10_isCorrect())
+    }
+
 
 }
