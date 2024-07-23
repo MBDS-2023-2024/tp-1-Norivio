@@ -24,7 +24,7 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun sortAgeAscDesc(type: String): List<Student> {
-        return when(type){
+        return when(type.lowercase()){
             "asc" -> students.sortedBy { it.age }
             "desc" -> students.sortedByDescending { it.age }
             else -> throw IllegalArgumentException("Le type doit être asc ou desc")
