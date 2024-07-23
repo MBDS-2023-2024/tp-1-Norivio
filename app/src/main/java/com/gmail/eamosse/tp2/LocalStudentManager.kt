@@ -36,7 +36,7 @@ class LocalStudentManager : StudentManager {
     }
 
     override fun boysOrGirls(sexe: String): List<Student> {
-        TODO("Not yet implemented")
+        return students.filter { it.sexe.equals(sexe, ignoreCase = true) }
     }
 
     override fun onlyNames(): List<String> {
